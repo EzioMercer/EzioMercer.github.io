@@ -12,7 +12,7 @@ class ProjectsDB {
 		const pageSize = 16;
 
 		return this.#projects
-			.filter(project => project.title.includes(title))
+			.filter(project => new RegExp(title, 'gi').test(project.title))
 			.filter(project => tags.every(tag => project.hasTag(tag)))
 			.slice(page * pageSize, (page + 1) * pageSize)
 	}

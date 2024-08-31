@@ -1,3 +1,4 @@
+import styles from './ProjectsList.module.scss';
 import Project from '../../../../_localDB/projectsDB/Project';
 import ProjectListItem from './ProjectListItem/ProjectListItem';
 
@@ -7,7 +8,7 @@ const ProjectsList = ({
 	projects: Project[]
 }) => {
 	return (
-		<ul>
+		<ul className={ styles.list }>
 			{
 				projects.map(project => <ProjectListItem key={ project.id } project={ project } />)
 			}

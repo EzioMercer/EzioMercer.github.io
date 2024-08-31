@@ -1,0 +1,13 @@
+.list-item {
+	background-color: yellow;
+
+	> a {
+		width: 100%;
+		display: block;
+		height: 100%;
+
+		:hover {
+			text-decoration: underline;
+		}
+	}
+}

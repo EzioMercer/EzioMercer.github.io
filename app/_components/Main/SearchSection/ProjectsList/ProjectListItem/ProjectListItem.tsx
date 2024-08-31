@@ -1,3 +1,4 @@
+import styles from './ProjectListItem.module.scss'
 import Project from '../../../../../_localDB/projectsDB/Project';
 
 const ProjectListItem = ({
@@ -6,7 +7,7 @@ const ProjectListItem = ({
 	project: Project
 }) => {
 	return (
-		<li>
+		<li className={ styles['list-item']}>
 			<a target="_blank" href={ project.link }>{ project.title }</a>
 		</li>
 	)
