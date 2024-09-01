@@ -11,17 +11,15 @@ const RootLayout = ({
 	children
 }: {
 	children: ReactNode
-}) => {
-	return (
-		<html lang="en">
-			<body>
-				<Script src="/_initDeviceHeight.js" strategy={'beforeInteractive'}/>
-				<Header />
-				{ children }
-				<Footer />
-			</body>
-		</html>
-	)
-}
+}) => (
+	<html lang="en">
+		<body>
+			<Script src="/_initDeviceHeight.js" strategy={'beforeInteractive'}/>
+			<Header />
+			{ children }
+			<Footer />
+		</body>
+	</html>
+)
 
 export default RootLayout;

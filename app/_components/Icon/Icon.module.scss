@@ -1,0 +1,12 @@
+.icon {
+	--size: 20px;
+
+	display: inline-block;
+	width: var(--size);
+	height: var(--size);
+	background-size: cover;
+
+	&-tag {
+		background-image: url('/icons/tag.svg');
+	}
+}

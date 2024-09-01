@@ -4,7 +4,7 @@ import TAGS from './Tags';
 class ProjectsDB {
 	readonly #host = 'https://EzioMercer.github.io/';
 	readonly #projects: Project[] = [
-		new Project('Finom', this.#host + 'Finom', [TAGS.LAYOUT, TAGS.REACT]),
+		new Project('Finom', this.#host + 'Finom', [TAGS.LAYOUT, TAGS.REACT, TAGS.HTML, TAGS.CSS]),
 		new Project('Registration', this.#host + 'Registration', [TAGS.LAYOUT, TAGS.CANVAS])
 	]
 

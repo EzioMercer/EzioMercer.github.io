@@ -11,15 +11,13 @@ export const viewport: Viewport = {
 	maximumScale: 1
 }
 
-const Page = () => {
-	return (
-		<main className={ styles.main }>
-			<Container>
-				<HeroSection />
-				<SearchSection />
-			</Container>
-		</main>
-	)
-}
+const Page = () => (
+	<main className={ styles.main }>
+		<Container>
+			<HeroSection />
+			<SearchSection />
+		</Container>
+	</main>
+)
 
 export default Page;
