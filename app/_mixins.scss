@@ -1,0 +1,3 @@
+@mixin height-vh($size) {
+	height: calc(var(--device-height) * $size / 100);
+}

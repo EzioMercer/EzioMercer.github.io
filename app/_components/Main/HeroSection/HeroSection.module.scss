@@ -1,3 +1,5 @@
+@import 'app/_mixins';
+
 .section {
 	--coefficient: 5;
 
@@ -7,7 +9,7 @@
 	align-items: center;
 	text-align: center;
 
-	height: 100vh;
+	@include height-vh(100);
 
 	color: white;
 	font-size: calc(4rem + max(var(--coefficient) * 1vw, var(--min-body-width) * var(--coefficient) / 100));
