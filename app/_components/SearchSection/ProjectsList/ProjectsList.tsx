@@ -1,5 +1,5 @@
 import styles from './ProjectsList.module.scss';
-import Project from '../../../../_localDB/projectsDB/Project';
+import Project from '../../../_localDB/projectsDB/Project';
 import ProjectListItem from './ProjectListItem/ProjectListItem';
 
 const ProjectsList = ({

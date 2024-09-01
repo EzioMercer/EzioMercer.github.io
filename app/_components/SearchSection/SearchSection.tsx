@@ -1,9 +1,9 @@
 'use client';
 
 import styles from './SearchSection.module.scss';
-import projectsDB from '../../../_localDB/projectsDB/projectsDB';
 import { useEffect, useState } from 'react';
-import Project, { ValuesOfTags } from '../../../_localDB/projectsDB/Project';
+import projectsDB from '../../_localDB/projectsDB/projectsDB';
+import Project, { ValuesOfTags } from '../../_localDB/projectsDB/Project';
 import SearchForm from './SearchForm/SearchForm';
 import ProjectsList from './ProjectsList/ProjectsList';
 
@@ -17,7 +17,7 @@ const SearchSection = () => {
 		title: '',
 		tags: []
 	});
-	const [projects, setProjects] = useState<Project[]>([]);
+	const [projects, setProjects] = useState<Project[]>(projectsDB.getProjects());
 
 	useEffect(() => {
 		setProjects(projectsDB.getProjects(searchOptions.title, 0, searchOptions.tags))

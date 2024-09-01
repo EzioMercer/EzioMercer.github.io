@@ -1,0 +1,1 @@
+document.documentElement.style.setProperty('--device-height', window.innerHeight + 'px');

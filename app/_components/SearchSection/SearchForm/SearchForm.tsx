@@ -1,6 +1,6 @@
-import { ValuesOfTags } from '../../../../_localDB/projectsDB/Project';
+import { ValuesOfTags } from '../../../_localDB/projectsDB/Project';
 import { ChangeEvent, Dispatch, SetStateAction } from 'react';
-import TAGS from '../../../../_localDB/projectsDB/Tags';
+import TAGS from '../../../_localDB/projectsDB/Tags';
 import { SearchOptions } from '../SearchSection';
 
 const values = Object.values(TAGS);

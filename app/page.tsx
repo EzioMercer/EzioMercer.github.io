@@ -1,10 +1,8 @@
-'use client';
-
-import Header from './_components/Header/Header';
-import Footer from './_components/Footer/Footer';
-import Main from './_components/Main/Main';
+import styles from './_page.module.scss';
 import { Viewport } from 'next';
-import { useEffect } from 'react';
+import Container from './_components/Container/Container';
+import HeroSection from './_components/HeroSection/HeroSection';
+import SearchSection from './_components/SearchSection/SearchSection';
 
 export const viewport: Viewport = {
 	width: 'device-width',
@@ -13,21 +11,15 @@ export const viewport: Viewport = {
 	maximumScale: 1
 }
 
-const handleResize = () => {
-	document.documentElement.style.setProperty('--device-height', window.innerHeight + 'px');
-}
-
 const Page = () => {
-
-	useEffect(handleResize, []);
-
 	return (
-		<>
-			<Header />
-			<Main />
-			<Footer />
-		</>
-	);
+		<main className={ styles.main }>
+			<Container>
+				<HeroSection />
+				<SearchSection />
+			</Container>
+		</main>
+	)
 }
 
 export default Page;

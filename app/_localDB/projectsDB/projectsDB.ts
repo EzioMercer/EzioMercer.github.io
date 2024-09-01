@@ -8,7 +8,7 @@ class ProjectsDB {
 		new Project('Registration', this.#host + 'Registration', [TAGS.LAYOUT, TAGS.CANVAS])
 	]
 
-	getProjects(title: string, page: number, tags: ValuesOfTags[]): Project[] {
+	getProjects(title: string = '', page: number = 0, tags: ValuesOfTags[] = []): Project[] {
 		const pageSize = 16;
 
 		return this.#projects
