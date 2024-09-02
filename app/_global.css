@@ -22,3 +22,8 @@ html::-webkit-scrollbar {
 	display: none;
 }
 
+input,
+select {
+	appearance: none;
+	border: unset;
+}

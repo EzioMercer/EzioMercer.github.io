@@ -1,11 +1,11 @@
 import styles from './TagsList.module.scss';
-import { ValuesOfTags } from '../../../../../_localDB/projectsDB/Project';
+import { ValueOfTags } from '../../../../../_localDB/projectsDB/Project';
 import TagsListItem from './TagsListItem/TagsListItem';
 
 const TagsList = ({
 	tags
 }: {
-	tags: ValuesOfTags[]
+	tags: ValueOfTags[]
 }) => (
 	<ul className={ styles.list }>
 		{

@@ -1,14 +1,18 @@
-import Project, { ValuesOfTags } from './Project';
+import Project, { ValueOfTags } from './Project';
 import TAGS from './Tags';
 
 class ProjectsDB {
-	readonly #host = 'https://EzioMercer.github.io/';
+	static readonly #host = 'https://EzioMercer.github.io/';
+	static readonly #profile = 'https://github.com/EzioMercer/';
+
 	readonly #projects: Project[] = [
-		new Project('Finom', this.#host + 'Finom', [TAGS.LAYOUT, TAGS.REACT, TAGS.HTML, TAGS.CSS]),
-		new Project('Registration', this.#host + 'Registration', [TAGS.LAYOUT, TAGS.CANVAS])
+		new Project('Finom', ProjectsDB.#host + 'Finom', [TAGS.LAYOUT, TAGS.REACT, TAGS.HTML, TAGS.CSS]),
+		new Project('Registration', ProjectsDB.#host + 'Registration', [TAGS.LAYOUT, TAGS.CANVAS]),
+		new Project('Colorful border', ProjectsDB.#profile + 'cobo', [TAGS.LAYOUT, TAGS.JS, TAGS.CSS, TAGS.HTML, TAGS.LIBRARY]),
+		new Project('True Math', ProjectsDB.#profile + 'true-math', [TAGS.ALGORITHMS, TAGS.JS, TAGS.LIBRARY]),
 	]
 
-	getProjects(title: string = '', page: number = 0, tags: ValuesOfTags[] = []): Project[] {
+	getProjects(title: string = '', page: number = 0, tags: ValueOfTags[] = []): Project[] {
 		const pageSize = 16;
 
 		return this.#projects

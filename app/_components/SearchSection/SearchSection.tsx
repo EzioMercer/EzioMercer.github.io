@@ -3,13 +3,13 @@
 import styles from './SearchSection.module.scss';
 import { useEffect, useState } from 'react';
 import projectsDB from '../../_localDB/projectsDB/projectsDB';
-import Project, { ValuesOfTags } from '../../_localDB/projectsDB/Project';
+import Project, { ValueOfTags } from '../../_localDB/projectsDB/Project';
 import SearchForm from './SearchForm/SearchForm';
 import ProjectsList from './ProjectsList/ProjectsList';
 
 export type SearchOptions = {
 	title: string,
-	tags: ValuesOfTags[]
+	tags: ValueOfTags[]
 }
 
 const SearchSection = () => {

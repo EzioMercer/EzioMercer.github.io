@@ -1,11 +1,11 @@
 import styles from './TagsListItem.module.scss';
 import Icon from '../../../../../Icon/Icon';
-import { ValuesOfTags } from '../../../../../../_localDB/projectsDB/Project';
+import { ValueOfTags } from '../../../../../../_localDB/projectsDB/Project';
 
 const TagsListItem = ({
 	tag
 }: {
-	tag: ValuesOfTags
+	tag: ValueOfTags
 }) => (
 	<li className={ styles['list-item'] }>
 		<Icon iconName={ 'tag' } />

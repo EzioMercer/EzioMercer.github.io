@@ -1,14 +1,14 @@
 import TAGS from './Tags';
 
-export type ValuesOfTags = typeof TAGS[keyof typeof TAGS];
+export type ValueOfTags = typeof TAGS[keyof typeof TAGS];
 
 export default class Project {
 	readonly #id: string = '';
 	readonly #link: string = '';
 	readonly #title: string = '';
-	readonly #tags: Set<ValuesOfTags>= new Set();
+	readonly #tags: Set<ValueOfTags>= new Set();
 
-	constructor(title: string, link: string, tags: ValuesOfTags[]) {
+	constructor(title: string, link: string, tags: ValueOfTags[]) {
 		this.#id = crypto.randomUUID();
 		this.#title = title;
 		this.#link = link;
@@ -30,11 +30,11 @@ export default class Project {
 		return this.#title;
 	}
 
-	get tags(): ValuesOfTags[] {
+	get tags(): ValueOfTags[] {
 		return [...this.#tags.values()];
 	}
 
-	hasTag(tag: ValuesOfTags): boolean {
+	hasTag(tag: ValueOfTags): boolean {
 		return this.#tags.has(tag);
 	}
 }

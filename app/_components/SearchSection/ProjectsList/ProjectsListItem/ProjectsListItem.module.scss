@@ -3,7 +3,7 @@
 	flex-direction: column;
 	gap: 8px;
 
-	background-color: yellow;
+	position: relative;
 
 	> a {
 		width: 100%;
@@ -13,5 +13,16 @@
 		:hover {
 			text-decoration: underline;
 		}
+	}
+
+	+ .list-item::before {
+		content: '';
+		width: 100%;
+
+		position: absolute;
+		top: calc(var(--gap) / -2);
+		left: 0;
+
+		border: 1px solid black;
 	}
 }
