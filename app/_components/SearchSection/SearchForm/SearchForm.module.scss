@@ -1,5 +1,15 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 16px;
+
+	padding: 16px;
+
+	> input {
+		font-size: 2rem;
+
+		padding: 8px;
+
+		border: 1px solid black;
+	}
 }

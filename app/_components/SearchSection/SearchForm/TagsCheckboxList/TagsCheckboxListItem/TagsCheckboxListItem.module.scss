@@ -1,10 +1,33 @@
 .tag {
+	--border-radius: 4px;
+
+	padding: 8px;
+
+	position: relative;
+
 	cursor: pointer;
+	border: 1px solid black;
+	border-radius: var(--border-radius);
+
+	z-index: 0;
 
 	input {
-		--size: 16px;
+		--size: 100%;
 
 		width: var(--size);
 		height: var(--size);
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		cursor: pointer;
+		border-radius: var(--border-radius);
+
+		z-index: -1;
+
+		&:checked {
+			background-color: skyblue;
+		}
 	}
 }
