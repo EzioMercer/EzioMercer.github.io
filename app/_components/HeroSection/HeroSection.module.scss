@@ -13,9 +13,11 @@
 
 	color: white;
 	font-size: calc(4rem + max(var(--coefficient) * 1vw, var(--min-body-width) * var(--coefficient) / 100));
+	font-weight: 512;
 
 	.arrow {
 		animation: bouncing .8s infinite linear ;
+		font-size: 256px;
 	}
 }
 

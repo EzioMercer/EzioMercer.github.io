@@ -1,3 +1,6 @@
 .section {
-	background-color: white;
+	height: var(--device-height);
+	overflow: auto;
+
+	background-color: #ccc;
 }

@@ -12,6 +12,8 @@ body {
 		"footer";
 
 	background-color: var(--primary);
+
+	font-family: Piazzolla, serif;
 }
 
 html {
@@ -26,4 +28,12 @@ input,
 select {
 	appearance: none;
 	border: unset;
+}
+
+input::placeholder {
+	font-family: Piazzolla, serif;
+}
+
+a:visited {
+	color: var(--visited-link-color);
 }
