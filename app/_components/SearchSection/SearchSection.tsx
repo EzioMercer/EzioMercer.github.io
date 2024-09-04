@@ -6,6 +6,7 @@ import projectsDB from '../../_localDB/projectsDB/projectsDB';
 import Project, { ValueOfTags } from '../../_localDB/projectsDB/Project';
 import SearchForm from './SearchForm/SearchForm';
 import ProjectsList from './ProjectsList/ProjectsList';
+import Container from '../Container/Container';
 
 export type SearchOptions = {
 	title: string,
@@ -25,8 +26,10 @@ const SearchSection = () => {
 
 	return (
 		<section className={ styles.section }>
-			<SearchForm setSearchOptions={ setSearchOptions } />
-			<ProjectsList projects={ projects } />
+			<Container className={ styles.container }>
+				<SearchForm setSearchOptions={ setSearchOptions } />
+				<ProjectsList projects={ projects } />
+			</Container>
 		</section>
 	)
 }

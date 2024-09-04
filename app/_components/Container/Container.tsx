@@ -2,12 +2,14 @@ import styles from './Container.module.scss';
 import { ReactNode } from 'react';
 
 const Container = ({
-	children
+	children,
+	className
 }: {
-	children: ReactNode
+	children: ReactNode,
+	className?: string
 }) => {
 	return (
-		<div className={ styles.container }>{ children }</div>
+		<div className={ `${styles.container} ${className ?? ''}` }>{ children }</div>
 	)
 }
 

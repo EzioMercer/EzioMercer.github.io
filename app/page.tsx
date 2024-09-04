@@ -1,6 +1,5 @@
 import styles from './_page.module.scss';
 import { Metadata, Viewport } from 'next';
-import Container from './_components/Container/Container';
 import HeroSection from './_components/HeroSection/HeroSection';
 import SearchSection from './_components/SearchSection/SearchSection';
 
@@ -21,10 +20,8 @@ export const metadata: Metadata = {
 
 const Page = () => (
 	<main className={ styles.main }>
-		<Container>
-			<HeroSection />
-			<SearchSection />
-		</Container>
+		<HeroSection />
+		<SearchSection />
 	</main>
 )
 

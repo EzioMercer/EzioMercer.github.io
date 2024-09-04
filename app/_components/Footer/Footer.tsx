@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<footer className={ styles.footer }>
 			<Container>
-				FOOTER
+				{''}
 			</Container>
 		</footer>
 	)
