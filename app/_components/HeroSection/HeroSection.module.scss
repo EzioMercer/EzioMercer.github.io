@@ -9,7 +9,7 @@
 	align-items: center;
 	text-align: center;
 
-	@include height-vh(100);
+	min-height: vh(100);
 
 	color: white;
 	font-size: calc(4rem + max(var(--coefficient) * 1vw, var(--min-body-width) * var(--coefficient) / 100));
