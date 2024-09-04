@@ -1,7 +1,7 @@
 @import 'app/_mixins';
 
 .section {
-	--coefficient: 5;
+	--coefficient: 7;
 
 	display: flex;
 	flex-direction: column;
@@ -12,20 +12,31 @@
 	min-height: vh(100);
 
 	color: white;
-	font-size: calc(4rem + max(var(--coefficient) * 1vw, var(--min-body-width) * var(--coefficient) / 100));
+	font-size: calc(2rem + max(var(--coefficient) * 1vw, var(--min-body-width) * var(--coefficient) / 100));
 	font-weight: 512;
+
+	word-break: break-word;
+
+	.logo {
+		height: 100%;
+
+		img {
+			height: 100%;
+			max-width: 100%;
+		}
+	}
 
 	.arrow {
 		animation: bouncing .8s infinite linear ;
-		font-size: 256px;
+		font-size: 200px;
 	}
 }
 
 @keyframes bouncing {
 	from {
-		transform: translateY(-150px);
+		transform: scale(1, 1.2) translateY(-100px);
 	}
 	to {
-		transform: translateY(0px);
+		transform: scale(1, 1.2) translateY(0px);
 	}
 }
