@@ -30,6 +30,7 @@ select {
 	border: unset;
 }
 
+input,
 input::placeholder {
 	font-family: Piazzolla, serif;
 }
