@@ -14,7 +14,7 @@ const spans = text
 const HeroSection = () => (
 	<section className={ styles.section }>
 		<Container className={ styles.container }>
-			<img src="/logo/EzioMercerLogo.png" alt="logo" width="200" height="200" />
+			<img src="/logo/EzioMercerLogo.png" alt="logo" width="150" height="150" />
 			<span>{ spans }</span>
 			<span className={ styles.arrow }>↓</span>
 		</Container>

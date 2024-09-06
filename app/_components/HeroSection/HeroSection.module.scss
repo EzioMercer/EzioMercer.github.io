@@ -7,7 +7,7 @@
 	position: relative;
 
 	&::before {
-		--square-side: max(1vh, 1vw);
+		--square-side: max(#{vh(1)}, 1vw);
 		--side-multiplier: 100;
 		--sqrt-2: 1.41;
 		--size: calc(var(--square-side) * var(--side-multiplier) * var(--sqrt-2));
@@ -42,7 +42,7 @@
 		position: relative;
 
 		color: black;
-		font-size: calc(2rem + max(var(--coefficient) * 1vw, var(--min-body-width) * var(--coefficient) / 100));
+		font-size: calc(2.5rem + max(var(--coefficient) * min(1vw, vh(1)), var(--min-body-width) * var(--coefficient) / 100));
 		font-weight: 512;
 
 		word-break: break-word;
