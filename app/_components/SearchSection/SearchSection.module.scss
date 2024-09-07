@@ -2,10 +2,10 @@
 	display: flex;
 	justify-content: center;
 
+	background-color: #ccc;
+
 	.container {
 		height: var(--device-height);
 		overflow: auto;
-
-		background-color: #ccc;
 	}
 }

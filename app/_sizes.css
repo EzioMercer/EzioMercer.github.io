@@ -1,4 +1,6 @@
 :root {
 	--device-height: 100vh;
 	--min-body-width: 300px;
+
+	--border-radius: 8px;
 }

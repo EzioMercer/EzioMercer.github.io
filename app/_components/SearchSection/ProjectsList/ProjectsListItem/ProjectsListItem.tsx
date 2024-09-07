@@ -8,8 +8,10 @@ const ProjectsListItem = ({
 	project: Project
 }) => (
 	<li className={ styles['list-item'] }>
-		<a target="_blank" href={ project.link }>{ project.title }</a>
-		<TagsList tags={ project.tags } />
+		<a target="_blank" href={ project.link }>
+			<span>{ project.title }</span>
+			<TagsList tags={ project.tags } />
+		</a>
 	</li>
 )
 

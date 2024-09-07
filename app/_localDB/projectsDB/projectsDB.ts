@@ -7,7 +7,7 @@ class ProjectsDB {
 
 	readonly #projects: Project[] = [
 		new Project('Finom', ProjectsDB.#host + 'Finom', [TAGS.LAYOUT, TAGS.REACT, TAGS.HTML, TAGS.CSS]),
-		new Project('Registration', ProjectsDB.#host + 'Registration', [TAGS.LAYOUT, TAGS.REACT, TAGS.HTML, TAGS.CSS]),
+		new Project('Registration', ProjectsDB.#host + 'Registration', [TAGS.LAYOUT, TAGS.REACT, TAGS.FIREBASE, TAGS.HTML, TAGS.CSS]),
 		new Project('Colorful border', ProjectsDB.#profile + 'cobo', [TAGS.LIBRARY, TAGS.JS]),
 		new Project('True Math', ProjectsDB.#profile + 'true-math', [TAGS.LIBRARY, TAGS.ALGORITHMS, TAGS.JS])
 	]
