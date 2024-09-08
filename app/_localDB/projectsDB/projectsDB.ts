@@ -20,7 +20,7 @@ class ProjectsDB {
 			TAGS.FIREBASE,
 			TAGS.SCSS
 		]),
-		new Project('Snake game', ProjectsDB.#host + 'true-math', [
+		new Project('Snake game', ProjectsDB.#host + 'snake-canvas', [
 			TAGS.GAME,
 			TAGS.CANVAS,
 			TAGS.JAVA_SCRIPT,
