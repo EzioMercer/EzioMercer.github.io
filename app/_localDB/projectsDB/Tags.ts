@@ -4,11 +4,14 @@ const TAGS = {
 	CANVAS: 'Canvas',
 	HTML: 'HTML',
 	CSS: 'CSS',
-	JS: 'JS',
+	SCSS: 'SCSS',
+	JAVA_SCRIPT: 'JavaScript',
+	TYPE_SCRIPT: 'TypeScript',
 	ALGORITHMS: 'Algorithms',
-	// DATA_STRUCTURE: 'Data structure',
+	DATA_STRUCTURES: 'Data structures',
 	LIBRARY: 'Library',
 	FIREBASE: 'Firebase',
+	GAME: 'Game'
 } as const;
 
 export default TAGS;

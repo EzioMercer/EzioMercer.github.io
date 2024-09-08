@@ -6,10 +6,40 @@ class ProjectsDB {
 	static readonly #profile = 'https://github.com/EzioMercer/';
 
 	readonly #projects: Project[] = [
-		new Project('Finom', ProjectsDB.#host + 'Finom', [TAGS.LAYOUT, TAGS.REACT, TAGS.HTML, TAGS.CSS]),
-		new Project('Registration', ProjectsDB.#host + 'Registration', [TAGS.LAYOUT, TAGS.REACT, TAGS.FIREBASE, TAGS.HTML, TAGS.CSS]),
-		new Project('Colorful border', ProjectsDB.#profile + 'cobo', [TAGS.LIBRARY, TAGS.JS]),
-		new Project('True Math', ProjectsDB.#profile + 'true-math', [TAGS.LIBRARY, TAGS.ALGORITHMS, TAGS.JS])
+		// Hosted projects
+		new Project('Finom', ProjectsDB.#host + 'Finom', [
+			TAGS.LAYOUT,
+			TAGS.REACT,
+			TAGS.TYPE_SCRIPT,
+			TAGS.SCSS
+		]),
+		new Project('Registration', ProjectsDB.#host + 'Registration', [
+			TAGS.LAYOUT,
+			TAGS.REACT,
+			TAGS.TYPE_SCRIPT,
+			TAGS.FIREBASE,
+			TAGS.SCSS
+		]),
+		new Project('Snake game', ProjectsDB.#host + 'true-math', [
+			TAGS.GAME,
+			TAGS.CANVAS,
+			TAGS.JAVA_SCRIPT,
+			TAGS.HTML,
+			TAGS.CSS,
+			TAGS.ALGORITHMS,
+			TAGS.DATA_STRUCTURES
+		]),
+
+		// Not hosted projects
+		new Project('Colorful border', ProjectsDB.#profile + 'cobo', [
+			TAGS.LIBRARY,
+			TAGS.JAVA_SCRIPT
+		]),
+		new Project('True Math', ProjectsDB.#profile + 'true-math', [
+			TAGS.LIBRARY,
+			TAGS.ALGORITHMS,
+			TAGS.JAVA_SCRIPT
+		])
 	]
 
 	getProjects(title: string = '', page: number = 0, tags: ValueOfTags[] = []): Project[] {
