@@ -13,8 +13,10 @@ const RootLayout = ({
 	children: ReactNode
 }) => (
 	<html lang="en">
-		<body>
+		<head>
 			<Script src="/_initDeviceHeight.js" strategy={ 'beforeInteractive' } />
+		</head>
+		<body>
 			{ children }
 			<Footer />
 		</body>
