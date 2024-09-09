@@ -67,6 +67,8 @@
 			.symbol {
 				display: inline-block;
 
+				transition: transform .1s;
+
 				&:has(+ :hover) {
 					transform: scale(var(--first-sibling-scale));
 				}
