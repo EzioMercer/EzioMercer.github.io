@@ -12,10 +12,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-	title: 'Navigation',
-	description: 'Navigation through all projects',
-	authors: [{name: 'Rovshan Badirkhanov'}, {name: 'EzioMercer'}],
-	keywords: ['Navigation', 'projects', 'EzioMercer']
+	title: 'EzioMercer\'s projects',
+	description: 'Navigation through EzioMercer\'s projects',
+	authors: [{name: 'Rovshan Badirkhanov'}, {name: 'EzioMercer'}]
 }
 
 const Page = () => (

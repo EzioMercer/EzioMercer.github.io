@@ -14,7 +14,7 @@ const RootLayout = ({
 }) => (
 	<html lang="en">
 		<head>
-			<Script src="/_initDeviceHeight.js" strategy={ 'beforeInteractive' } />
+			<Script src="/_initDeviceHeight.js" strategy={ 'afterInteractive' } />
 		</head>
 		<body>
 			{ children }
