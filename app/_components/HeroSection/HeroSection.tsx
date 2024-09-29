@@ -7,10 +7,11 @@ const text = 'Welcome to navigation through EzioMercer\'s projects';
 const spans = text
 	.split(' ')
 	.map((word, i) => {
-		const Wrapper = i !== 4 ? Fragment : 'a';
+		const isEzioMercer = i === 4;
+		const Wrapper = !isEzioMercer ? Fragment : 'a';
 
 		return (
-			<Wrapper key={ i } href={ '/Rovshan Badirkhanov CV.pdf' }>
+			<Wrapper key={ i } {...(isEzioMercer ? {href: '/Rovshan Badirkhanov CV.pdf' } : {})}>
 				<span className={ styles.word }>
 					{
 						word
